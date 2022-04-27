@@ -1,4 +1,4 @@
-module.exports = function evalDOM(agrs) {
+export default function evalDOM(agrs) {
   const ELEMENTS = [
     "audio",
     "button",

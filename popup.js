@@ -6,7 +6,6 @@ document.addEventListener(
       "click",
       function() {
         const rootNode = document.getElementById("root-input").value;
-        console.log({ rootNode });
         chrome.tabs.query(
           {
             currentWindow: true,
