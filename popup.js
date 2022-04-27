@@ -13,10 +13,12 @@ document.addEventListener(
           },
           tabs => {
             for (let tab of tabs) {
-              chrome.tabs.executeScript(
-                tab.id,
+              chrome.scripting.executeScript(
                 {
-                  file: "index.js"
+                  files: ['index.js'],
+                  target: {
+                    tabId: tab.id,
+                  }
                 },
                 function() {
                   chrome.tabs.sendMessage(tab.id, {

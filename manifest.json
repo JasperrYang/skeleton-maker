@@ -2,11 +2,12 @@
   "name": "skeleton screen maker",
   "version": "1.0",
   "description": "Build the skeleton screen!",
-  "manifest_version": 2,
-  "browser_action": {
+  "manifest_version": 3,
+  "action": {
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "scripting"
   ]
 }

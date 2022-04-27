@@ -21,6 +21,9 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
       })
       .catch(e => {
         console.error(e);
-      });
+      })
+      .finally(
+        sendResponse({status: 'ok'})
+      )
   }
 });
